@@ -7,7 +7,7 @@ export default createStore({
     mutations: {
         nouvblog(state, blog) {
             state.listeblog.push(blog);
-            alert('ca marche')
+            //alert('ca marche')
         }
     },
     actions: {},
