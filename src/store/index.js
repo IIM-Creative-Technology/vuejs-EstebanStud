@@ -2,14 +2,20 @@ import { createStore } from 'vuex'
 
 export default createStore({
     state: {
-        listeblog: []
+        listeblog: [{
+            nom: 'titlepage',
+            titre: 'title',
+            desc: 'desc',
+            img: '',
+            corps: 'contenu',
+        }]
     },
     mutations: {
         nouvblog(state, blog) {
             state.listeblog.push(blog);
-            alert('ca marche')
+            console.log(this.listeblog);
         }
     },
-    actions: {},
-    modules: {}
+    //actions: {},
+    //modules: {}
 })

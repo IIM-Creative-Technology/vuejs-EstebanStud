@@ -28,7 +28,7 @@
         name: 'createpage',
         data(){
             return{
-                allPoste: this.$store.state.listeblog,
+                //allPoste: this.$store.state.listeblog,
                 titlepage:'',
                 metatitle:'',
                 metadesc:'',
