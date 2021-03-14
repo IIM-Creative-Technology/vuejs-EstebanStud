@@ -8,6 +8,7 @@ export default createStore({
             desc: 'desc',
             img: '',
             corps: 'contenu',
+            id: "0",
         }]
     },
     mutations: {
