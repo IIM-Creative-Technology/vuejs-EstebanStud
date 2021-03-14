@@ -1,5 +1,5 @@
 <template>
-    <p>dffgdsfgdsf</p>
+    
 </template>
 <script>
 export default {
