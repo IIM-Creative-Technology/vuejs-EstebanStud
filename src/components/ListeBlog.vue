@@ -6,8 +6,11 @@
             <li class="leblog">
                 <img src="https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/04/eso1644bsmall__w770.jpg"
                     class="imgblog" alt="">
+                <p class="titleblog">{{blog.nom}}</p>
                 <p class="titleblog">{{blog.titre}}</p>
-                <button>Editer</button>
+                <p class="titleblog">{{blog.desc}}</p>
+                <p class="titleblog">{{blog.txt}}</p>
+                <Edition :id="blog.id"></Edition>
                 <button>X</button>
             </li>
         </ul>
@@ -16,9 +19,13 @@
 
 
 <script>
+
+import Edition from './Edition.vue'
     export default {
         name: 'listeBlog',
-
+components: {
+     Edition
+     },
         data() {
             return {
                 allPoste: this.$store.state.listeblog

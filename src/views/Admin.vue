@@ -6,6 +6,7 @@
 </template>
 
 <script>
+
 import listeBlog from '../components/ListeBlog.vue'
 export default {
   components: {

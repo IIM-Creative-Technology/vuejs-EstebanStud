@@ -13,8 +13,15 @@ export default createStore({
     mutations: {
         nouvblog(state, blog) {
             state.listeblog.push(blog);
-            console.log(this.listeblog);
-        }
+        },
+        updatepost(state, blog) {
+            for (let i = 0; i < state.listeblog.length; i++) {
+                if (state.listeblog[i].id === blog.id) {
+                    state.listeblog[i] = blog;
+                }
+            }
+            state.listeblog[blog.id] = blog;
+        },
     },
     //actions: {},
     //modules: {}
