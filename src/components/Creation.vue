@@ -44,7 +44,7 @@
                  desc  : this.metadesc,
                  img  : this.imageurl,
                  txt  : this.corps,
-             
+                 id : this.$store.state.listeblog.length
                 }
                 this.$store.commit('nouvblog',blog);
                 this.$router.push('/admin')
