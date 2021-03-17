@@ -23,6 +23,9 @@ export default createStore({
             }
             state.listeblog[blog.id] = blog;
         },
+        suppression(state, blog) {
+            state.listeblog.splice(state.listeblog.indexOf(blog), 1)
+        }
     },
     //actions: {},
     //modules: {}

@@ -11,7 +11,7 @@
                 <p class="titleblog">{{blog.desc}}</p>
                 <p class="titleblog">{{blog.txt}}</p>
                 <Edition :id="blog.id"></Edition>
-                <button>X</button>
+                <button @click="suppression(blog)">X</button>
             </li>
         </ul>
     </div>
@@ -36,6 +36,9 @@ components: {
         methods: {
             rediction() {
                 this.$router.push('/create')
+            },
+            suppression(blog){
+                this.$store.commit("suppression", blog)
             }
 
         }
