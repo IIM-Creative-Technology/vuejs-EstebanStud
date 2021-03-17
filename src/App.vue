@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
   <router-link to="/admin">Gerer les blogs</router-link>|
-    <router-link to="/create">Blog</router-link> |
+    <router-link to="/blog">Blog</router-link> |
     <router-link to="/about">Login</router-link> 
     
   </div>
