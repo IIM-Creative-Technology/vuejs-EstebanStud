@@ -10,6 +10,7 @@
                 <p class="titleblog">{{blog.desc}}</p>
                 <p class="titleblog">{{blog.txt}}</p>
                 <Edition :id="blog.id"></Edition>
+                <router-link :to="{name: 'Article', params: {id:blog.id}}">Voir plus</router-link>
             </li>
         </ul>
     </div>
